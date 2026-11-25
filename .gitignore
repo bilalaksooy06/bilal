@@ -2,3 +2,11 @@ __pycache__/
 *.pyc
 .pytest_cache/
 tespit.png
+
+# Android
+android/.gradle/
+android/build/
+android/*/build/
+android/local.properties
+.kotlin/
+android/.kotlin/

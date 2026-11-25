@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- kulaklar -->
+    <path android:fillColor="#FFFFFF" android:pathData="M34,46 L38,26 L52,38 Z" />
+    <path android:fillColor="#FFFFFF" android:pathData="M74,46 L70,26 L56,38 Z" />
+    <!-- kafa -->
+    <path android:fillColor="#FFFFFF"
+        android:pathData="M54,36 C70,36 80,46 80,60 C80,74 69,82 54,82 C39,82 28,74 28,60 C28,46 38,36 54,36 Z" />
+    <!-- gözler -->
+    <path android:fillColor="#3B2A20" android:pathData="M44,56 m-4,0 a4,5 0 1,0 8,0 a4,5 0 1,0 -8,0" />
+    <path android:fillColor="#3B2A20" android:pathData="M64,56 m-4,0 a4,5 0 1,0 8,0 a4,5 0 1,0 -8,0" />
+    <!-- burun -->
+    <path android:fillColor="#FF7A8A" android:pathData="M50,65 L58,65 L54,70 Z" />
+</vector>

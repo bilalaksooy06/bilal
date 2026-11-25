@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🐱 MeowBot"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:padding="12dp"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnAccessibility"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="1) Erişilebilirlik ayarlarını aç" />
+
+        <Button
+            android:id="@+id/btnAppInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gri/kısıtlı görünüyorsa: Uygulama bilgisi" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Kedi nasıl konuyor?"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/tapMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/tapDouble"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Çift dokunma (varsayılan)" />
+
+            <RadioButton
+                android:id="@+id/tapTwice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="İki ayrı dokunuş (1. ✗, 2. kedi)" />
+
+            <RadioButton
+                android:id="@+id/tapSingle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tek dokunuş" />
+
+            <RadioButton
+                android:id="@+id/tapLong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Basılı tutma" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Hız"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/speed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/speedFast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hızlı" />
+
+            <RadioButton
+                android:id="@+id/speedNormal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Normal" />
+
+            <RadioButton
+                android:id="@+id/speedSlow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yavaş" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/help"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:lineSpacingExtra="4dp"
+            android:textSize="15sp" />
+    </LinearLayout>
+</ScrollView>

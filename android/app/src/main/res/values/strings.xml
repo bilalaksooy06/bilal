@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MeowBot</string>
+    <string name="service_summary">Meowdoku tahtasını çözüp kedileri yerleştirir</string>
+    <string name="service_description">MeowBot, ekranda yüzen 🐱 butonuna bastığında ekran görüntüsü alır, Meowdoku bulmacasını çözer ve kedileri senin yerine yerleştirmek için ekrana dokunur. Hiçbir veri telefondan dışarı gönderilmez.</string>
+</resources>
