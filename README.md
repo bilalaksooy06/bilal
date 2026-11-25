@@ -4,6 +4,43 @@ Meowdoku'yu kendi kendine oynayan bot. Ekranın görüntüsünü alır, tahtayı
 bulmacayı çözer ve kedileri senin yerine yerleştirir. Döngü modunda seviye
 bitince bir sonrakine geçip oynamaya devam eder.
 
+İki sürümü var:
+- **📱 MeowBot APK** (`android/`): doğrudan telefonda çalışır, bilgisayar gerekmez. **Önerilen.**
+- **💻 Python sürümü** (`meowdoku_bot/`): bilgisayardan USB ile telefonu ya da ekranı yönetir.
+
+---
+
+## 📱 MeowBot APK (Samsung S24 Ultra ve Android 11+)
+
+### İndir ve kur
+1. Telefondan reponun **Releases** sayfasını aç → **MeowBot (son sürüm)** → `MeowBot.apk`'ya dokun.
+2. "Bilinmeyen uygulamalar" uyarısı çıkarsa tarayıcıya / Dosyalarım'a izin ver.
+   - Samsung'da kurulum engellenirse: **Ayarlar → Güvenlik ve gizlilik → Otomatik Engelleyici**'yi
+     geçici olarak kapat, kurduktan sonra tekrar açabilirsin.
+3. MeowBot'u aç → **Erişilebilirlik ayarlarını aç** → *Yüklü uygulamalar* → **MeowBot** → Aç.
+   - Gri görünür ve "Kısıtlı ayar" derse: MeowBot'ta **Uygulama bilgisi** → sağ üstte **⋮** →
+     **Kısıtlı ayarlara izin ver** → sonra tekrar aç.
+
+### Kullan
+Ekranın kenarında bir panel belirir (sürükleyerek taşınır):
+
+| Buton | Ne yapar |
+|---|---|
+| 🐱 | Dokun: bu seviyeyi çöz. Basılı tut: tespit görüntüsünü Galeri'ye kaydet |
+| 🎯 | "Sonraki" butonunun yerini ayarla: kırmızı hedefi butonun üstüne sürükle, 🎯'a tekrar dokun |
+| 🔁 | Kendi kendine oyna: çöz → Sonraki → çöz… (⏹ ile durur) |
+
+Kediler yerine ✗ çıkıyorsa uygulamada **"İki ayrı dokunuş"** seçeneğini işaretle.
+Tahta yanlış okunursa görüntü **Galeri → Pictures/MeowBot**'a kaydedilir.
+
+### Kendin derlemek istersen
+GitHub Actions her `android/` değişikliğinde APK'yı derleyip Releases'e koyar
+(`.github/workflows/android.yml`). Android Studio ile `android/` klasörünü açıp da derleyebilirsin.
+
+---
+
+## 💻 Python sürümü
+
 ## Nasıl çalışır?
 
 1. **Ekran görüntüsü**: telefondan ADB ile ya da bilgisayar ekranından alınır.
